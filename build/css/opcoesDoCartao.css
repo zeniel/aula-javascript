@@ -1,0 +1,55 @@
+.opcoesDoCartao {
+	font-size: 1rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transform: translate(0em, 0%);
+	white-space: nowrap;
+}
+
+.opcoesDoCartao-opcao {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1em;
+	height: 1.5em;
+	width: 1.5em;
+	text-indent: -99999px;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border: 0px solid;
+	border-color: #AEAEAE;
+	background-color: #f1a46e;
+	background-size: 1em 1em;
+	background-position: center center;
+	background-repeat: no-repeat;
+    transition: .5s ease-out;
+    opacity: 0.4;
+}
+
+.opcoesDoCartao-opcao:hover {
+    box-shadow: 5px 5px 26px -1px rgba(0,0,0,0.75);
+    transition: .5s ease-in;
+    cursor: pointer;
+    transform: rotate(90deg);
+	height: 2em;
+	width: 2em;
+    border-radius: 15%;
+    opacity: 1;
+}
+
+.opcoesDoCartao-opcao + .opcoesDoCartao-opcao {
+	margin-left: .5em;
+}
+
+.opcoesDoCartao-remove {
+	background-image: url("../img/close.svg");
+}
+.opcoesDoCartao-remove:hover {
+    background-color: red;
+    border-color: firebrick;
+}
+
+.opcoesDoCartao-edita {
+	background-image: url("../img/edit.svg");
+}

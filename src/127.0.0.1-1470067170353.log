@@ -1,0 +1,4 @@
+pessoa.endereco = {rua: 'Rua guandú', numero: 37, bairro: 'Santa Teresa'}
+Object {rua: "Rua guandú", numero: 37, bairro: "Santa Teresa"}
+pessoa
+Object {nome: "Luana", sobrenome: "da Silva", texto: "jogo de futebol", idade: 18, endereco: Object}calculaMaioridade: ()endereco: Objectbairro: "Santa Teresa"numero: 37rua: "Rua guandú"__proto__: Objectidade: 18nome: "Luana"sobrenome: "da Silva"texto: "jogo de futebol"__proto__: Object

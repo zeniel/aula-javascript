@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #e8e8e8;
+}
+
+.cabecalho {
+    background: #0002c7;
+/*    padding: 16px;*/
+}
+
+.container{
+    padding: 0 10%; /*2 valores: 1ºtop-bottom 2ºleft-right*/
+}
+
+#mudalayout{
+    display: none;
+}
+
+@media(min-width: 560px){ /*se a largura disponĩvel para a aplicação for de pelo menos 560px, aplica as configurações a seguir */
+    #mudalayout{
+        display: inline-block;
+    }
+}

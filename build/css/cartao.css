@@ -1,0 +1,66 @@
+.cartao {
+	margin: 32px 16px;
+  	padding: 16px;
+	line-height: 1.5;
+	position: relative;
+	word-wrap: break-word;
+	font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    background: #ebef40;
+
+    opacity: 1;
+    transition: .5s ease-in;
+}
+
+.cartao--some {
+    opacity: 0.1;
+    transition: .5s ease-in;
+}
+
+.cartao--critico {
+	background: #ef4840;
+}
+
+.cartao--padrao {
+    background: #EBEF40;
+}
+
+.cartao--tranquilo {
+	background: #4ab0d2;
+}
+
+@media (min-width: 560px){
+	.cartao {
+		-ms-flex-positive: 1;
+		    flex-grow: 1;
+		display: inline-block;
+		text-align: left;
+		box-sizing: border-box;
+		vertical-align: top;
+        box-shadow: 10px 10px 13px -1px rgba(0,0,0,0.75);
+        width: 190px;
+        -ms-flex-preferred-size: 190px;
+            flex-basis: 190px;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+	}
+    
+    .cartao--textoGrande {
+        font-size: 1.8em;
+        width: 6em;
+        -ms-flex-preferred-size: 6em;
+            flex-basis: 6em;
+    }
+    .cartao--textoMedio {
+        font-size: 1.2em;
+        width: 9em;
+        -ms-flex-preferred-size: 9em;
+            flex-basis: 9em;
+    }
+    .cartao--textoPequeno {
+        font-size: 0.8em;
+        width: 11em;
+        -ms-flex-preferred-size: 11em;
+            flex-basis: 11em;
+    }
+}

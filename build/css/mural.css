@@ -1,0 +1,42 @@
+.mural {
+    font-size: 1.2rem;
+    background: #943232;
+}
+
+@media(min-width: 560px){ /*se a largura disponĩvel para a aplicação for de pelo menos 560px, aplica as configurações a seguir */
+    .mural{
+        text-align: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    
+    .mural--linhas .cartao{
+        -ms-flex-direction: auto;
+            flex-direction: auto;
+        display: block;  /*caso esteja em um browser antigo, o display:flex não funcionaria e o browser acabaria com o display:block*/
+        width: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+    }
+    .mural--linhas{
+        -ms-flex-direction: column;
+            flex-direction: column; 
+    }
+}
+
+@media (min-width: 610px){
+    .mural {
+        -ms-flex-align: start;
+            align-items: flex-start;
+    }
+}
+
+@media (min-width: 900px){
+    .mural {
+        -ms-flex-align: center;
+            align-items: center;
+        font-size: 1.2rem;
+    }
+}
